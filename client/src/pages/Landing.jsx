@@ -139,7 +139,7 @@ function Landing() {
         <div className="hidden md:flex items-center justify-center z-10">
           <div className="bg-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/20 shadow-2xl">
             <img
-              src="/src/assets/clglogo.jpeg"
+              src="/src/assets/newclglogo.png"
               alt="NIT Agartala"
               className="w-44 hover:scale-110 transition duration-500"
             />
