@@ -17,6 +17,8 @@ import Navbar from '../components/Navbar';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
+import clglogo from '../assets/clglogo.jpeg';
+
 import googleLogo from '../assets/logos/google.svg';
 import amazonLogo from '../assets/logos/amazon.svg';
 import microsoftLogo from '../assets/logos/microsoft.svg';
@@ -139,7 +141,7 @@ function Landing() {
         <div className="hidden md:flex items-center justify-center z-10">
           <div className="bg-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/20 shadow-2xl">
             <img
-              src="/assets/clglogo.svg"
+              src={clglogo}
               alt="NIT Agartala"
               className="w-44 hover:scale-110 transition duration-500"
             />
