@@ -9,11 +9,14 @@ function CompanyApplicants() {
   const fetchApplicants = async () => {
     const token = localStorage.getItem('token');
 
-    const response = await fetch(`http://localhost:5000/api/applications/company/${id}`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    const response = await fetch(
+      `https://clg-project-xkya.onrender.com/api/applications/company/${id}`,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      }
+    );
 
     const data = await response.json();
     setApplications(data);
@@ -26,7 +29,7 @@ function CompanyApplicants() {
   const handleStatusChange = async (appId, newStatus) => {
     const token = localStorage.getItem('token');
 
-    await fetch(`http://localhost:5000/api/applications/update/${appId}`, {
+    await fetch(`https://clg-project-xkya.onrender.com/api/applications/update/${appId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

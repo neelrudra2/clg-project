@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api/companies';
+const API_URL = 'https://clg-project-xkya.onrender.com/api/companies';
 
 export const getCompanies = async () => {
   const token = localStorage.getItem('token');
@@ -15,7 +15,7 @@ export const getCompanies = async () => {
 export const getCompanyById = async (id) => {
   const token = localStorage.getItem('token');
 
-  const response = await fetch(`http://localhost:5000/api/companies/${id}`, {
+  const response = await fetch(`https://clg-project-xkya.onrender.com/api/companies/${id}`, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -27,7 +27,7 @@ export const getCompanyById = async (id) => {
 export const createCompany = async (companyData) => {
   const token = localStorage.getItem('token');
 
-  const response = await fetch('http://localhost:5000/api/companies', {
+  const response = await fetch('https://clg-project-xkya.onrender.com/api/companies', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
